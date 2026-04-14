@@ -27,6 +27,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
+import { Analytics } from "@vercel/analytics/next";
 
 // --- Components ---
 
@@ -303,8 +304,8 @@ export default function App() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
             {[
               { label: "Years Experience", value: 10, suffix: "+" },
-              { label: "Projects Done", value: 500, suffix: "+" },
-              { label: "Happy Clients", value: 450, suffix: "+" },
+              { label: "Projects Done", value: 70, suffix: "+" },
+              { label: "Happy Clients", value: 70, suffix: "+" },
               { label: "Team Members", value: 15, suffix: "" },
             ].map((stat, i) => (
               <motion.div key={i} {...fadeIn}>
@@ -843,6 +844,7 @@ export default function App() {
           <span className="absolute top-0 right-0 w-4 h-4 bg-red-500 border-2 border-white rounded-full"></span>
         </motion.a>
       </div>
+      <Analytics />
     </div>
   );
 }
