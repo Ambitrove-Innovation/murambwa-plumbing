@@ -16,8 +16,6 @@ import {
   MapPin,
   Clock,
   ChevronDown,
-  Plus,
-  Minus,
   CheckCircle2,
   Instagram,
   Facebook,
@@ -27,7 +25,6 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
-import { Analytics } from "@vercel/analytics/next";
 
 // --- Components ---
 
@@ -844,7 +841,6 @@ export default function App() {
           <span className="absolute top-0 right-0 w-4 h-4 bg-red-500 border-2 border-white rounded-full"></span>
         </motion.a>
       </div>
-      <Analytics />
     </div>
   );
 }
