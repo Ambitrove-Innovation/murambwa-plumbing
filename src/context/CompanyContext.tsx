@@ -1,9 +1,3 @@
-/**
- * Company Context
- * Provides global access to company information
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import React, { createContext, useContext } from "react";
 import { COMPANY_INFO } from "../constants";
 import { CompanyInfo } from "../types";

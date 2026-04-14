@@ -1,6 +1,4 @@
-/**
- * Context Module Exports
- */
+// Context Module Exports
 
 export {
   CompanyProvider,
